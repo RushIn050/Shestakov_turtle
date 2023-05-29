@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen"/>
+	<node pkg="turtlesim" type="turtle_teleop_key" name="turtle2" output="screen"/>
+	<node pkg="turtle" type="run.py" name="turtle_stalker_node" output="screen">
+		<param name="speed" value="1.0"/>
+	</node>
+
+</launch>
